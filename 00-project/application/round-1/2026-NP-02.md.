@@ -1,0 +1,32 @@
+---
+name: volkan gulsoy
+neptun: c09332
+id: 2026-NP-02
+# Procedural Generation and Automatic Evaluation of Game Levels
+
+## My interpretation of the brief
+The objective of this project is to build an experimental system that procedurally generates game levels and automatically evaluates their quality using quantitative metrics. The emphasis is on algorithmic implementation, statistical testing, and analyzing how generation parameters affect level quality, rather than visual polish or complete game mechanics.
+
+## Why I am a good fit for this project
+I am passionate about algorithm design, computational geometry, and game systems development. I am interested in exploring how algorithmic rules can reliably create structurally sound and playable content. This project offers an ideal context to demonstrate clean architecture, algorithmic logic, and data analysis skills.
+
+## Relevant experience and background
+I have strong fundamentals in object-oriented programming, data structures, and algorithm analysis from my coursework. I am comfortable working with graph traversals, cellular automata, and statistical data handling in C++ / C# / Python. Additionally, I am experienced with Git for version control and modular software architecture.
+
+## Proposed approach
+I will focus on a grid- or tile-based level format (e.g., dungeons or platformer stages). I will implement two distinct generation techniques:
+1. **Cellular Automata / Perlin Noise** for cave-like organic environments.
+2. **Grammar / Graph-Based Generation** for structured room-and-corridor layouts.
+
+For automatic evaluation, I will build automated solvers and analyzers to calculate key metrics such as topological connectivity, shortest path length, branching factor, and resource distribution. I will run batch runs across parameter configurations to collect comparative statistical data.
+
+## Initial plan
+1. **Define Core Models:** Establish tile maps, level specifications, and valid boundary constraints.
+2. **Implement Generator 1:** Build and test the first generation approach (e.g., Cellular Automata).
+3. **Implement Generator 2:** Build and test the second generation approach (e.g., Graph/Grammar-Based).
+4. **Develop Evaluation Pipeline:** Implement reachability algorithms (BFS/A* search) and quantitative metric extraction.
+5. **Batch Testing & Visualization:** Automate headless batch runs, generate statistical outputs, and build a simple visual inspection tool.
+6. **Analysis & Reporting:** Document the parameter-metric relationships and evaluate generator trade-offs.
+
+## Additional information
+The project repository will be maintained with clean commit practices and unit tests for generator rules and metrics. Visual engines will be used strictly as an inspection tool, while all generation logic will remain modular and independent.
