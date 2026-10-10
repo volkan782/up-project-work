@@ -150,3 +150,20 @@ Numeric values below are proposed starting settings and will be reviewed after t
 | Smoothing can conceal error while adding visual lag. | Complicates interpretation | Student | Measure simulation error and displayed correction separately. |
 | Latency metrics may compare different ticks or unsynchronized clocks. | Produces misleading results | Student | Match states using tick/input identifiers and use local monotonic timestamps. |
 | Scope may grow into a full game. | Reduces time available for evaluation | Student | Keep basic movement and prioritize repeatable measurements. |
+## 8. Initial technical architecture
+
+The prototype will use an authoritative client-server architecture. The client predicts local movement and sends numbered inputs to the server. The server processes inputs and returns authoritative snapshots. The client uses these snapshots for reconciliation and remote-entity interpolation.
+
+```mermaid
+flowchart TD
+    A[Player input] --> B[Client prediction]
+    B --> C[Network simulation]
+    C --> D[Authoritative server]
+    D --> E[Server snapshots]
+    E --> F[Client reconciliation]
+    E --> G[Remote interpolation]
+    F --> H[Game display]
+    G --> H
+```
+
+Network delay, jitter, and packet loss will be simulated for repeatable experiments. The system will record responsiveness, position error, correction magnitude, and network traffic.
