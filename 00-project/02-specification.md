@@ -193,3 +193,27 @@ flowchart TD
 
 This is an initial interface plan. The final layout
 will be refined during implementation.
+### Proposed screen layout
+
+The following sketch shows the planned game interface.
+
+```text
++--------------------------------------------------+
+| Multiplayer Synchronization Prototype            |
++--------------------------------------------------+
+| Server: [localhost] [Connect]                     |
++------------------------------+-------------------+
+|                              | Network Settings  |
+|        2D GAME AREA          | Delay: 100 ms     |
+|                              | Jitter: 20 ms     |
+|     [P1]         [P2]        | Loss: 1%          |
+|                              | Mode: Prediction  |
++------------------------------+-------------------+
+| Diagnostics                                      |
+| Position Error: 0.02  Corrections: 4             |
++--------------------------------------------------+
+| [Start Experiment] [Stop] [Export CSV]           |
++--------------------------------------------------+
+```
+
+The values shown are examples, not actual test results.
