@@ -9,7 +9,7 @@ An experimental multiplayer game prototype under simulated network conditions
 
 Author: volkan gulsoy  
 Neptun: c09332  
-Supervisor: To be confirmed  
+Supervisor: Péter Novák
 Project ID: 2026-NP-01
 
 ---
