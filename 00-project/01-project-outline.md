@@ -2,7 +2,7 @@
 name: volkan gulsoy
 neptun: "c09332"
 id: "2026-NP-01"
-github: "github: "https://github.com/volkan782/up-project-work"
+github: "https://github.com/volkan782/up-project-work"
 ---
 
 # Client-Side Prediction and Server Reconciliation in a Multiplayer Game
