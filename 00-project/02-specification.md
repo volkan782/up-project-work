@@ -167,3 +167,29 @@ flowchart TD
 ```
 
 Network delay, jitter, and packet loss will be simulated for repeatable experiments. The system will record responsiveness, position error, correction magnitude, and network traffic.
+## 9. Initial user interface wireframe
+
+The prototype will use a simple interface for testing
+multiplayer synchronization.
+
+The main screen will include:
+- A two-dimensional game area showing the local and remote players.
+- A connection panel for joining the server.
+- A network configuration panel for delay, jitter, and packet loss.
+- A synchronization mode selector.
+- A diagnostics panel showing position error and correction information.
+- Controls for starting experiments and exporting results.
+
+```mermaid
+flowchart TD
+    A[Main application window] --> B[Connection panel]
+    A --> C[2D game area]
+    A --> D[Experiment controls]
+    A --> E[Diagnostics panel]
+    D --> F[Network settings]
+    D --> G[Synchronization mode]
+    D --> H[Run and export results]
+```
+
+This is an initial interface plan. The final layout
+will be refined during implementation.
