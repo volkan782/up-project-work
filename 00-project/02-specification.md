@@ -106,7 +106,7 @@ project_outline: "[[00-project/01-project-outline]]"
 | Export experiment data. | Each run produces configuration, mode, seed, timestamp/tick, and metric records in CSV or JSON. | Must |
 | Show diagnostic information. | The evaluator can inspect connection status, active mode, and current correction/error measurements. | Should |
 | Compare visual correction policies. | Immediate correction and a configurable smoothing policy can run on identical traces. | Should |
-| Display remote movement smoothly. | Optional interpolation uses received snapshots without affecting server authority. | Could |
+| Implement remote-entity interpolation. | The client buffers authoritative snapshots and interpolates remote-player positions between snapshots. The technique is evaluated under different latency, jitter, and packet-loss settings without changing server authority. | Must |
 
 Priority: **Must** = required for the final prototype; **Should** = important; **Could** = optional if time permits.
 
